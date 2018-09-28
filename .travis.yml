@@ -1,4 +1,17 @@
 language: java
 rvm:
  - 2.2
- - jruby
+  <plugin>
+   <groupId>com.mycompany.example</groupId>
+   <artifactId>display-maven-plugin</artifactId>
+   <version>1.0</version>
+   <executions>
+     <execution>
+       <phase>process-test-resources</phase>
+       <goals>
+         <goal>time</goal>
+       </goals>
+     </execution>
+   </executions>
+ </plugin>
+ - java
