@@ -24,4 +24,7 @@ rvm:
     </dependency>
   </dependencies>
 </project>
+build.xmlns;
+build.my-app;
+build.hello-world;
  - java
