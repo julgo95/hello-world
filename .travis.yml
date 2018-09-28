@@ -1,5 +1,14 @@
 language: java
 rvm:
  - 2.2
-  System.out.println("Hallo Welt2")
+  <settings>
+  <localRepository>D:\Tools\Maven3-Repo</localRepository>
+  <mirrors>
+    <mirror>
+      <id>MeineMirrorId</id>
+      <mirrorOf>central</mirrorOf>
+      <url>http://firma.repository.server:port/repo/path</url>
+    </mirror>
+  </mirrors>
+</settings>
  - java
